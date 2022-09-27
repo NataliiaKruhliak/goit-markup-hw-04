@@ -209,6 +209,41 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-icon-title {
+  font-weight: var(--second-font-weight);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+.footer > .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon-link {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon-item {
+  width: 44px;
+  height: 44px;
+  background-color: #188ce8;
+}
+
 /* ----------------------------------MAIN INDEX------------------------------- */
 
 /* -------------------------------------top section------------------------------- */
@@ -217,6 +252,10 @@ body {
   background-color: var(--second-background-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4));
+  background-image: url(/images/header-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .top-title {
@@ -276,6 +315,17 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-maim-color-text);
+}
+
+.container-features-icon {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: var(--another-background-color);
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ----------------------------------section direction------------------------------- */
@@ -351,6 +401,47 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-maim-color-text);
+  margin-bottom: 16px;
+}
+
+.team-icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.team-icon-link {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-icon-item {
+  width: 44px;
+  height: 44px;
+  background-color: #188ce8;
+}
+
+/* ----------------------------------section clients------------------------------- */
+
+.client > .sections-title {
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 /* -------------------------------MAIN PORTFOLIO------------------------------- */
