@@ -14,6 +14,11 @@
   --second-font-weight: 700;
   --padding-section: 94px;
   --image-gap: 30px;
+  --main-image-background: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/top-bg.jpg);
 }
 
 p,
@@ -169,11 +174,23 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
 }
 
-/* .header-icon {
-  justify-content: center;
-} */
+.header-icon {
+  margin-right: 10px;
+}
+
+.mailto::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  /* background-image: url("../images/symbol-defs.svg#icon-mailto"); */
+  background-image: url("../images/envelope\ \(hover\).svg");
+  background-size: contain;
+}
 
 /* -------------------------------FOOTER------------------------------- */
 
@@ -252,10 +269,10 @@ body {
   background-color: var(--second-background-color);
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4));
-  background-image: url(/images/header-bg.png);
+  background-image: var(--main-image-background);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .top-title {
