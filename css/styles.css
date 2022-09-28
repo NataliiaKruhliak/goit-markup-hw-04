@@ -191,6 +191,15 @@ body {
   background-image: url("../images/envelope\ \(hover\).svg");
   background-size: contain;
 }
+.number::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  border: 1px solid red;
+  /* background-image: url("../images/symbol-defs.svg#icon-mailto"); */
+  background-size: contain;
+}
 
 /* -------------------------------FOOTER------------------------------- */
 
